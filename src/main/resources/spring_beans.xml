@@ -14,12 +14,12 @@
 		<property name="clientSessionFactory" ref="class_config" />
 	</bean>
 
-
-
 	<bean id="categoryDAOImpl" class="com.portal.daos.CategoryDAOImpl" scope="singleton">
 		<property name="categorySessionFactory" ref="class_config" />
 	</bean>
-	
+	<bean id="testcaseDAOImpl" class="com.portal.daos.TestcaseDAOImpl" scope="singleton">
+		<property name="testcaseSessionFactory" ref="class_config" />
+	</bean>
 
 	<bean id="productDAOImpl" class="com.portal.daos.ProductDAOImpl" scope="singleton">
 		<property name="productSessionFactory" ref="class_config" />
@@ -33,6 +33,11 @@
 	<bean id="cartDAOImpl" class="com.portal.daos.CartDAOImpl" scope="singleton">
 		<property name="cartSessionFactory" ref="class_config" />
 	</bean>
+	
+	<bean id="deviceDAOImpl" class="com.portal.daos.DeviceDAOImpl" scope="singleton">
+		<property name="deviceSessionFactory" ref="class_config" />
+	</bean>
+	
 	
 	<bean id="formAction" class="org.springframework.webflow.action.FormAction">
 	<property name="formObjectName"><value>user</value></property>

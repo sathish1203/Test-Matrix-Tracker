@@ -35,8 +35,9 @@ color: black;
 
 <!-- This is the title message in the body that is to be displayed in all pages -->
 <div class="jumbotron text-center">
-<h1>Welcome to Stuff Spot.</h1>
-<p>Your Economy Supermarket at your convenience.<br />
+<p> <img src = "/Trane_TestCase_Repository/images/tranelogo.png" class = "pull-right"/><p>
+<h1>Welcome to Trane Testcase Repository</h1>
+<p>Store test cases with ease.<br />
 Hello! Dear ${currentUser}.
 </p> 
 <p color = "blue">${msg}</p>
@@ -58,14 +59,12 @@ Hello! Dear ${currentUser}.
 </div>
 
 <div class="collapse navbar-collapse" id="example-navbar-collapse">
+
 <ul class="nav navbar-nav">
-	<a class="navbar-brand" href="/Trane_TestCase_Repository/admin_add_category">CATEGORY</a>
+	<a class="navbar-brand" href="/Trane_TestCase_Repository/admin_add_device">DEVICE</a>
 </ul>
 <ul class="nav navbar-nav">
-	<a class="navbar-brand" href="/Trane_TestCase_Repository/admin_add_supplier">SUPPLIER</a>
-</ul>
-<ul class="nav navbar-nav">
-	<a class="navbar-brand" href="/Trane_TestCase_Repository/admin_add_product">PRODUCT</a>
+	<a class="navbar-brand" href="/Trane_TestCase_Repository/admin_add_testcase">TESTCASES</a>
 </ul>
     
 <ul>

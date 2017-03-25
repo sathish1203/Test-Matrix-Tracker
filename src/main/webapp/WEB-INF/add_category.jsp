@@ -11,26 +11,26 @@
 
 <!-- ****************Start of the form**********************-->
 <div class="col-md-12">
-<h2>Add Category Data</h2>
+<h2>Add Device Data</h2>
 <form:form method="POST" action="/Trane_TestCase_Repository/admin_save_category">
 <table>
 <tr>
-<td><form:label path="id">Category ID: </form:label></td>
+<td><form:label path="id">Device ID: </form:label></td>
 <td><c:out value="${category.id}" /></td>
 <td><form:errors path="id" style="color:red"/><form:hidden path="id" value="${category.id}"/></td>
 </tr>
 <tr>
-<td><form:label path="name">Category Name:</form:label></td>
+<td><form:label path="name">Device Name:</form:label></td>
 <td><form:input path="name" value="${category.name}" /></td>
 <td><form:errors path="name" style="color:red"/></td>
 </tr>
 <tr>
-<td><form:label path="subcategory">Sub-category Name:</form:label></td>
+<td><form:label path="subcategory">Sub-Device Name:</form:label></td>
 <td><form:input path="subcategory" value="${category.subcategory}" /></td>
 <td><form:errors path="subcategory" style="color:red"/></td>
 </tr>
 <tr>
-<td><form:label path="description">Category Description:</form:label></td>
+<td><form:label path="description">Device Description:</form:label></td>
 <td><form:input path="description" value="${category.description}" /></td>
 <td><form:errors path="description" style="color:red"/></td>
 </tr>
@@ -54,10 +54,10 @@
 <table class = "table">
 <thead>
 <tr>
-<th>Category ID</th>
-<th>Category Name</th>
-<th>Sub-Category Description</th>
-<th>Category Description</th>
+<th>Device ID</th>
+<th>Device Name</th>
+<th>Sub-Device Description</th>
+<th>Device Description</th>
 <th>Action</th>
 </tr>
 </thead>

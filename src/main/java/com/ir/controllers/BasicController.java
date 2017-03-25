@@ -17,8 +17,10 @@ import com.ir.validator.SignupFormValidator;
 import com.portal.daos.CartDAOImpl;
 import com.portal.daos.CategoryDAOImpl;
 import com.portal.daos.ClientDAOImpl;
+import com.portal.daos.DeviceDAOImpl;
 import com.portal.daos.ProductDAOImpl;
 import com.portal.daos.SupplierDAOImpl;
+import com.portal.daos.TestcaseDAOImpl;
 import com.portal.models.CartProduct;
 import com.portal.models.Category;
 import com.portal.models.Product;
@@ -31,6 +33,9 @@ public CategoryDAOImpl categoryDAOImpl = (CategoryDAOImpl) application_context.g
 public ProductDAOImpl productDAOImpl = (ProductDAOImpl) application_context.getBean("productDAOImpl");
 public SupplierDAOImpl supplierDAOImpl = (SupplierDAOImpl)application_context.getBean("supplierDAOImpl");
 public CartDAOImpl cartDAOImpl = (CartDAOImpl)application_context.getBean("cartDAOImpl");
+public DeviceDAOImpl deviceDAOImpl = (DeviceDAOImpl)application_context.getBean("deviceDAOImpl");
+public TestcaseDAOImpl testcaseDAOImpl = (TestcaseDAOImpl)application_context.getBean("testcaseDAOImpl");
+
 public static ClassPathXmlApplicationContext application_context = new ClassPathXmlApplicationContext("spring_beans.xml");
 
 @Autowired

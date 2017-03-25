@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+<hibernate-mapping>
+  
+<class name="com.portal.models.Testcase" table="TESTCASE">  
+
+<id name="id" type = "string">
+<column name = "ID"/>  
+<generator class="assigned"/>  
+</id>  
+
+<property name = "deviceid" type = "string">
+<column name = "DEVICEID" />
+</property>
+
+<property name = "name" type = "string">
+<column name = "NAME" />
+</property>
+
+<property name = "scenario" type = "string">
+<column name = "SCENARIO" />
+</property>
+
+<property name = "steps" type = "string">
+<column name = "STEPS"  />
+</property>
+
+<property name = "testdata" type = "string">
+<column name = "TESTDATA" />
+</property>
+
+<property name = "expectedresults" type = "string">
+<column name = "EXPECTEDRESULTS"  />
+</property>
+
+</class>  
+</hibernate-mapping>  

@@ -13,20 +13,8 @@
 <div class="row">
 
     
-<!--  This div will store the image for the latest deals page -->
-<div class="col-sm-4">
-	<h3>Get Started</h3>
-	<p>Get started with the deals that we have to offer. <br>Browse the different categories and shop as you wish!!</p>
-	<div class = "carousel-caption">
-	<img class = "img-responsive" src="/Trane_TestCase_Repository/images/offers.png"/>
-	<br /><p><h3>The website for getting the best deals of the season.</h3></p>
-	</div>
-</div>
-<!--  End of the latest deals div -->
-
-
 <!--  This div will store the carousel for the home needs category -->
-<div class="col-sm-4">
+<div class="col-sm-6">
 <h3>Deals of the Day</h3>
 <p>Todays deals that are the best offer you can get.</p>
 
@@ -113,7 +101,7 @@ Details of the item.
      
      
 <!--  This div will store the carousel for the Electronics category --> 
-<div class="col-sm-4">
+<div class="col-sm-6">
 <h3>Featured Deals</h3> 
 <p>Featured deals that have been used by customers.</p>
 

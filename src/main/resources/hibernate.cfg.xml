@@ -16,7 +16,8 @@ EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <mapping resource = "client.hbm.xml"/>
 <mapping resource = "category.hbm.xml"/>
 <mapping resource = "product.hbm.xml"/>
-<mapping resource = "supplier.hbm.xml"/>
 <mapping resource = "cart.hbm.xml"/>
+<mapping resource = "device.hbm.xml"/>
+<mapping resource = "testcase.hbm.xml"/>
 </session-factory>
 </hibernate-configuration>

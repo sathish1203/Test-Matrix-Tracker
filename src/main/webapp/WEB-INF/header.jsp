@@ -118,7 +118,7 @@ color: black;
 <!-- This is the title message in the body that is to be displayed in all pages -->
 <div class="jumbotron text-center">
 <p> <img src = "/Trane_TestCase_Repository/images/tranelogo.png" class = "pull-right"/><p>
-<h1>Welcome to Trane Testcase Repository.</h1>
+<h1>Welcome to Trane Testcase Repository</h1>
 <p>Store test cases with ease.<br />
 Hello! Dear ${currentUser}.
 </p> 
@@ -214,7 +214,7 @@ data-toggle = "collapse" data-target = "#example-navbar-collapse">
 <a class = "navbar-brand pull-right" href = "/Trane_TestCase_Repository/j_spring_security_logout">Logout</a>
 </c:if>
 <c:if test="${isAdmin == true}">
-<a class = "navbar-brand pull-right" href = "/Trane_TestCase_Repository/admin_add_supplier">Admin</a>
+<a class = "navbar-brand pull-right" href = "/Trane_TestCase_Repository/admin_add_device">Admin</a>
 </c:if>
 </ul>
 <ul>
