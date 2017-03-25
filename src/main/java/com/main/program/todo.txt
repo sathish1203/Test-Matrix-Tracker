@@ -1,0 +1,7 @@
+1. Separate the header, body and footer using JSP. 
+2. Define the categories on the Nav bar based on the Database.
+3. Add a product description page. Check the quantities and allow in the cart.
+3. Add the cart support. Check how to add the cart support.
+4. Add a checkout page. Get the address and relevant details.
+5. After user presses checkout show information to user.
+6. Should the details of checkout be saved?
