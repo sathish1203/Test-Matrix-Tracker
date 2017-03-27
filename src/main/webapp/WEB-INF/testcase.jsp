@@ -1,6 +1,7 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@include file = "header_admin.jsp"  %>
+<%@include file = "header.jsp"  %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 
@@ -22,7 +23,7 @@
 <!-- ****************Start of the form**********************-->
 <div class="col-md-11">
 <h2>Add Testcase Data</h2>
-<form:form method="POST" action="/Trane_TestCase_Repository/admin_save_testcase">
+<form:form method="POST" action="/Trane_TestCase_Repository/user_save_testcase">
 <table>
 <tr> 
 <td><form:label path="id">Testcase ID:</form:label></td>
@@ -42,22 +43,22 @@
 
 <tr>
 <td><form:label path="scenario">Testcase scenario:</form:label></td>
-<td><form:textarea path="scenario" rows="5" cols="30" value="${testcase.scenario}" /></td>
+<td><form:textarea rows="5" cols="30" path="scenario" value="${testcase.scenario}" onClick  = ""></form:textarea></td>
 <td><form:errors path="scenario" style="color:red"/></td>
 </tr>
 <tr>
 <td><form:label path="steps">Testcase steps:</form:label></td>
-<td><form:textarea path="steps" rows="5" cols="30" value="${testcase.steps}" /></td>
+<td><form:textarea path="steps" rows="3" cols="30" value="${testcase.steps}" /></td>
 <td><form:errors path="steps" style="color:red"/></td>
 </tr>
 <tr>
 <td><form:label path="testdata">Testcase testdata:</form:label></td>
-<td><form:textarea path="testdata" rows="5" cols="30" value="${testcase.testdata}" /></td>
+<td><form:textarea path="testdata" rows="2" cols="30"  value="${testcase.testdata}" /></td>
 <td><form:errors path="testdata" style="color:red"/></td>
 </tr>
 <tr>
 <td><form:label path="expectedresults">Testcase expectedresults:</form:label></td>
-<td><form:textarea path="expectedresults" rows="5" cols="30" value="${testcase.expectedresults}" /></td>
+<td><form:textarea path="expectedresults" rows="2" cols="30"  value="${testcase.expectedresults}" /></td>
 <td><form:errors path="expectedresults" style="color:red"/></td>
 </tr>
 <tr>
@@ -98,8 +99,8 @@
 <td><c:out value="${testcase.steps}" /></td>
 <td><c:out value="${testcase.testdata}" /></td>
 <td><c:out value="${testcase.expectedresults}" /></td>
-<td align="center"><a href="/Trane_TestCase_Repository/admin_edit_testcase?id=${testcase.id}">Edit</a>
-| <a href="/Trane_TestCase_Repository/admin_delete_testcase?id=${testcase.id}">Delete</a></td>
+<td align="center"><a href="/Trane_TestCase_Repository/user_edit_testcase?id=${testcase.id}">Edit</a>
+| <a href="/Trane_TestCase_Repository/user_delete_testcase?id=${testcase.id}">Delete</a></td>
 </tr>
 </c:forEach>
 </table>

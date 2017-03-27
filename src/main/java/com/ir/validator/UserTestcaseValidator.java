@@ -12,7 +12,7 @@ import com.portal.models.Testcase;
 
 
 @Component
-public class AdminTestcaseValidator implements Validator{
+public class UserTestcaseValidator implements Validator{
 
 	   public boolean supports(Class<?> clazz) {
 	        return Testcase.class.isAssignableFrom(clazz);

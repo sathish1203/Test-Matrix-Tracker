@@ -6,7 +6,7 @@
 
 <!-- Head tag stores the title and the relevant libraries that are needed.-->
 <head>
-<title>Welcome to StuffSpot.</title>
+<title>Trane Testcase Repository</title>
    
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <link  rel="stylesheet" type = "text/css" href="/Trane_TestCase_Repository/bootstrap/css/bootstrap.min.css" >
@@ -118,7 +118,7 @@ color: black;
 <!-- This is the title message in the body that is to be displayed in all pages -->
 <div class="jumbotron text-center">
 <p> <img src = "/Trane_TestCase_Repository/images/tranelogo.png" class = "pull-right"/><p>
-<h1>Welcome to Trane Testcase Repository</h1>
+<h1>Trane Testcase Repository</h1>
 <p>Store test cases with ease.<br />
 Hello! Dear ${currentUser}.
 </p> 
@@ -206,6 +206,7 @@ data-toggle = "collapse" data-target = "#example-navbar-collapse">
 
 <!-- A list to add more buttons in Nav bar depending on some conditions. -->
 <ul>
+<a class = "navbar-brand" href = "/Trane_TestCase_Repository/user_add_testcase">TESTCASES</a>
 <c:if test="${currentUser == 'Guest'}">
 <a class = "navbar-brand pull-right" href = "/Trane_TestCase_Repository/all_login">Login</a>
 <a class = "navbar-brand pull-right" href = "/Trane_TestCase_Repository/all_signup">Signup</a>
@@ -216,6 +217,7 @@ data-toggle = "collapse" data-target = "#example-navbar-collapse">
 <c:if test="${isAdmin == true}">
 <a class = "navbar-brand pull-right" href = "/Trane_TestCase_Repository/admin_add_device">Admin</a>
 </c:if>
+
 </ul>
 <ul>
 <div ng-app="myApp">
